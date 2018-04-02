@@ -1,0 +1,98 @@
+/****************************************nav bar ********************************/
+
+.navbar {
+    height: 150px;
+    background-color: whitesmoke;
+}
+
+.form-inline {
+    
+    padding: 10px;
+}
+
+.form-inline .btn {
+    
+    margin: 5px;
+    background-color: whitesmoke;
+    color: #333333;
+}
+
+.form-inline .btn :hover{
+    
+    color: #111;
+}
+
+.collapse .navbar-nav .nav-item {
+    
+    font-size: 25px;
+    color: #333333;
+    margin: 5px;
+}
+
+.navbar-collapse {
+    background-color: whitesmoke;
+    z-index: 2;
+    
+}
+
+.carousel-inner .carousel-item img {
+   
+    height: 600px;
+    width: auto;
+}
+
+.carousel-inner {
+   
+  z-index: -1;
+}
+
+.collapse .navbar-nav .nav-item :hover{
+    
+    font-size: 25px;
+    color: #666666;
+    margin: 5px;
+}
+div.scrollmenu {
+    text-align: center;
+    width: 65%;
+    height: auto ;
+    background-color: whitesmoke;
+    overflow: auto;
+    white-space: nowrap;
+    text-decoration: none;
+}
+div.scrollmenu .row {
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+div.scrollmenu img {
+    text-align: center;
+    height: 175px;
+    width: 210px;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+/******************************* end navbar **********************************/
+/******************************* index *************************************/
+#scrolltitle {
+    text-align: center;
+    color: #333333;
+    font-size: 30px;
+}
+
+/******************************end index ************************************/
+/****************************** footer ****************************************/
+
+footer {
+    background-color: #666666;
+}
+
+#footer {
+    color: whitesmoke;
+}
