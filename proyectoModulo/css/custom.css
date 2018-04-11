@@ -1,29 +1,36 @@
 /****************************************nav bar ********************************/
 
+body {
+    font-family: 'Teko', sans-serif;
+
+}
+
 .navbar {
     height: 150px;
     background-color: whitesmoke;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #D48F28;
 }
 
 .form-inline {
-    
+
     padding: 10px;
 }
 
 .form-inline .btn {
-    
+
     margin: 5px;
     background-color: whitesmoke;
     color: #333333;
 }
 
-.form-inline .btn :hover{
-    
+.form-inline .btn :hover {
+
     color: #111;
 }
 
 .collapse .navbar-nav .nav-item {
-    
+
     font-size: 25px;
     color: #333333;
     margin: 5px;
@@ -32,35 +39,42 @@
 .navbar-collapse {
     background-color: whitesmoke;
     z-index: 2;
-    
+
 }
 
 .carousel-inner .carousel-item img {
-   
+
     height: 600px;
     width: auto;
 }
 
+
 .carousel-inner {
-   
-  z-index: -1;
+
+    z-index: -1;
 }
 
-.collapse .navbar-nav .nav-item :hover{
-    
-    font-size: 25px;
-    color: #666666;
-    margin: 5px;
+#carouselExampleControls {
+    background: url(http://www.padeltrainer.com/wp-content/uploads/2017/08/rejilla.png);
 }
+
+.collapse .navbar-nav .nav-item :hover {
+
+
+    color: #666666;
+
+}
+
 div.scrollmenu {
     text-align: center;
     width: 65%;
-    height: auto ;
+    height: auto;
     background-color: whitesmoke;
     overflow: auto;
     white-space: nowrap;
     text-decoration: none;
 }
+
 div.scrollmenu .row {
     display: inline-block;
     color: #333;
@@ -68,6 +82,7 @@ div.scrollmenu .row {
     padding: 14px;
     text-decoration: none;
 }
+
 div.scrollmenu img {
     text-align: center;
     height: 175px;
@@ -78,21 +93,124 @@ div.scrollmenu a:hover {
     background-color: #777;
 }
 
+.form-inline #buscar {
+    padding: .75rem 1.5rem;
+}
+
 /******************************* end navbar **********************************/
+
 /******************************* index *************************************/
+
 #scrolltitle {
     text-align: center;
     color: #333333;
     font-size: 30px;
 }
 
+#producto {
+    height: 200px;
+}
+
 /******************************end index ************************************/
+
 /****************************** footer ****************************************/
 
 footer {
-    background-color: #666666;
+    background: #111;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #111, #999);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #111, #999);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
 }
 
 #footer {
     color: whitesmoke;
+}
+
+/***************************end footer *****************************************/
+
+/***************************intro producto **************************************/
+
+#mod-producto .form-group {
+    align-items: center;
+    width: 30%;
+}
+
+
+/*******************************Contact section*********************************/
+
+#contact .content-header {
+    font-family: 'Oleo Script', cursive;
+    color: #fcc500;
+    font-size: 45px;
+}
+
+#contact .section-content {
+    text-align: center;
+
+}
+
+#contact {
+
+    font-family: 'Teko', sans-serif;
+    padding-top: 60px;
+    width: 100%;
+    width: 100vw;
+    height: 800px;
+    background: #111;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #111, #999);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #111, #999);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+.contact-section {
+    padding-top: 40px;
+}
+
+.contact-section .col-md-6 {
+    width: 50%;
+}
+
+#contact .form-line {
+    border-right: 1px solid #B29999;
+}
+
+#contact .form-group {
+    margin-top: 10px;
+
+}
+
+#contact label {
+    font-size: 1.3em;
+    line-height: 1em;
+    font-weight: normal;
+}
+
+#contact .form-control {
+    font-size: 1.3em;
+    color: #080808;
+}
+
+#contact textarea.form-control {
+    height: 135px;
+    /* margin-top: px;*/
+}
+
+#contact .container #message {
+    float: right;
+
+}
+
+#contact .submit {
+    font-size: 1.1em;
+    float: right;
+    width: 150px;
+    background-color: transparent;
+    color: #fff;
+
 }
