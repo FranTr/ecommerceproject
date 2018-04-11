@@ -1,0 +1,1 @@
+Registro OK. Pulse <a href="<?php echo $root ?>micuenta/"> aqui </a> para ir a su cuenta 
