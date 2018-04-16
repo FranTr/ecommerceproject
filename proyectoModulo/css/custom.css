@@ -19,7 +19,7 @@ body {
 
 .form-inline .btn {
 
-    margin: 5px;
+    margin: 8px;
     background-color: whitesmoke;
     color: #333333;
 }
@@ -28,7 +28,9 @@ body {
 
     color: #111;
 }
-
+#log {
+    border-color: transparent !important;
+}
 .collapse .navbar-nav .nav-item {
 
     font-size: 25px;

@@ -25,8 +25,12 @@
     <div style="margin-left:10%" class="row">
         <?php 
                     while($producto = sqlsrv_fetch_array($resultado_producto,SQLSRV_FETCH_ASSOC)) { 
-                            ?>
+              ?>
+        <?php if(isset($_SESSION["usuario"])) { ?>
         <form method="post" action="<?php echo $root?>carrito/index.php" style="padding:5px" class="col-md-3 col-sm-3 col-xs-12">
+            <?php } else { ?>
+        <form method="post" action="" style="padding:5px" class="col-md-3 col-sm-3 col-xs-12">
+            <?php } ?>
             <div class="slider-item">
                 <div class="slider-image">
                     <img src="<?php echo $root?>images/productos/<?php echo $producto["urlimagen"]?>" id="producto" class="img-responsive" alt="a" />
@@ -46,7 +50,11 @@
                     <div class="cart-section">
                         <div class="row">
                             <div class="col-md-6 col-sm-12 col-xs-6">
+                                <?php if(isset($_SESSION["usuario"])) { ?>
                                 <button class="btn btn-info"><i class="fa fa-shopping-cart" aria-hidden="true" type="submit"></i> Add To Cart</button>
+                                <?php } else { ?> 
+                                 <button class="btn btn-info"><i class="fa fa-shopping-cart" aria-hidden="true" type="submit"></i><a style="text-decoration: none; color: white;"href="<?php echo $root?>login/index.php"> Add To Cart</a></button>   
+                                    <?php } ?>
                             </div>
                         </div>
                     </div>

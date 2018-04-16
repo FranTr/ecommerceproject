@@ -10,7 +10,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="<?php echo $root?>">Inicio</a>
             </li>
-         <!--   <?php if( isset($_SESSION[ "usuario"]) && $_SESSION[ "usuario"][ "privilegio"] !=1 ) { ?>
+            <!--   <?php if( isset($_SESSION[ "usuario"]) && $_SESSION[ "usuario"][ "privilegio"] !=1 ) { ?>
             <li class="nav-item">
                 <a class="nav-link" href="#">Mis Pedidos</a>
             </li>
@@ -56,11 +56,11 @@
         </form>
         <form class="form-inline my-2 my-lg-0">
 
-            <a href="<?php echo $root?>mostrarCarrito/index.php" class="btn btn-outline-dark my-2 my-sm-0 btn-lg"><i class="fas fa-cart-plus"></i>
-        </a>
-
             <?php if( isset($_SESSION[ "usuario"]) ) { ?>
 
+            <a href="<?php echo $root?>mostrarCarrito/index.php" class="btn btn-outline-dark my-2 my-sm-0 btn-lg"><i class="fas fa-cart-plus"></i>
+            </a>
+            
             <a class="btn btn-outline-dark my-2 my-sm-0 btn-lg" id="cuenta" href="<?php echo $root?>micuenta/index.php">
                 <?php echo $_SESSION[ "usuario"][ "Nombre"]?>
             </a>
@@ -69,7 +69,7 @@
             <?php } else { ?>
             <a class="btn btn-outline-dark my-2 my-sm-0 btn-lg" href="<?php echo $root?>registro/" role="button">Sign Up</a>
 
-            <a class="btn btn-outline-dark my-2 my-sm-0 btn-lg" href="<?php echo $root ?>login/index.php"><i class="fas fa-user"></i></a>
+            <a class="btn btn-outline-dark my-2 my-sm-0 btn-lg" style="border-color: transparent" id="log" href="<?php echo $root ?>login/index.php"><i class="fas fa-user"></i></a>
 
             <?php } ?>
         </form>
